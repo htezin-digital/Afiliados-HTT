@@ -1,0 +1,196 @@
+<html><head><base href="." />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>MATERIAL PARA AFILIADOS HTT</title>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    user-select: none;
+}
+
+body {
+    background: #000000;
+    color: white;
+}
+
+@keyframes rotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.landing-header {
+    text-align: center;
+    padding: 3rem;
+    background: linear-gradient(135deg, #000000 50%, #4CAF50 50%);
+    position: relative;
+    overflow: hidden;
+}
+
+.landing-header::before,
+.landing-header::after {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    border: 2px solid #4CAF50;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    animation: rotate 4s linear infinite;
+    z-index: 1;
+}
+
+.landing-header::before {
+    left: 0;
+    border-right: none;
+}
+
+.landing-header::after {
+    right: 0;
+    border-left: none;
+}
+
+.landing-header h1 {
+    color: #4CAF50;
+    margin-bottom: 1rem;
+    text-shadow: 0 0 10px rgba(76, 175, 80, 0.8);
+    position: relative;
+    z-index: 3;
+    background: #000;
+    display: inline-block;
+    padding: 1rem 2rem;
+    border: 2px solid #4CAF50;
+    box-shadow: 0 0 15px rgba(76, 175, 80, 0.5);
+}
+
+.materials-grid {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.material-card {
+    background: #1a1a1a;
+    border-radius: 10px;
+    padding: 2rem;
+    border: 1px solid #4CAF50;
+    box-shadow: 0 0 15px rgba(76, 175, 80, 0.5);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.material-card:hover {
+    transform: translateY(-5px);
+}
+
+.material-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 1rem;
+}
+
+.material-title {
+    color: #4CAF50;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    text-shadow: 0 0 10px rgba(76, 175, 80, 0.8);
+}
+
+.material-list {
+    text-align: left;
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+}
+
+.material-list li {
+    margin-bottom: 0.5rem;
+}
+
+.download-button {
+    background: #4CAF50;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.download-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 15px rgba(76, 175, 80, 0.7);
+}
+
+.download-button.disabled {
+    background: #666;
+    cursor: not-allowed;
+    opacity: 0.7;
+    pointer-events: none;
+}
+
+.download-button.disabled:hover {
+    transform: none;
+    box-shadow: none;
+}
+</style>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<script>
+document.addEventListener('contextmenu', event => event.preventDefault());
+</script>
+</head>
+<body>
+<div class="landing-header">
+    <h1>MATERIAL PARA AFILIADOS HTT</h1>
+</div>
+
+<div class="materials-grid">
+    <div class="material-card">
+        <svg class="material-icon" viewBox="0 0 24 24" fill="#4CAF50">
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+        </svg>
+        <h2 class="material-title">Material de Estudo</h2>
+        <ul class="material-list">
+            <li>E-books sobre Marketing Digital</li>
+            <li>Guias de Copywriting</li>
+            <li>Estratégias de Vendas</li>
+            <li>Templates de Posts</li>
+        </ul>
+        <a href="https://htezin-digital.github.io/Loja-Digital-HTT/" class="download-button">Acessar Material</a>
+    </div>
+
+    <div class="material-card">
+        <svg class="material-icon" viewBox="0 0 24 24" fill="#4CAF50">
+            <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10H7v-2h10v2z"/>
+        </svg>
+        <h2 class="material-title">Material de Divulgação</h2>
+        <ul class="material-list">
+            <li>Imagens para Redes Sociais</li>
+            <li>Vídeos Promocionais</li>
+            <li>Textos para Divulgação</li>
+            <li>Banners Personalizados</li>
+        </ul>
+        <a class="download-button disabled">SENDO MODERADO</a>
+    </div>
+
+    <div class="material-card">
+        <svg class="material-icon" viewBox="0 0 24 24" fill="#4CAF50">
+            <path d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6z"/>
+        </svg>
+        <h2 class="material-title">Métricas e Análises</h2>
+        <ul class="material-list">
+            <li>Planilhas de Controle</li>
+            <li>Relatórios de Vendas</li>
+            <li>Análise de Conversão</li>
+            <li>Metas e Objetivos</li>
+        </ul>
+        <a class="download-button disabled">SENDO MODERADO</a>
+    </div>
+</div>
+</body></html>
